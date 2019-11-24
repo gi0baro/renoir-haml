@@ -8,7 +8,7 @@ Renoir-Haml is an extension for the [Renoir engine](http://github.com/emmett-fra
 
 You can install Renoir-Haml using pip:
 
-    pip install Renoir-Haml
+    pip install renoir-haml
 
 And add it to your Renoir engine:
 
