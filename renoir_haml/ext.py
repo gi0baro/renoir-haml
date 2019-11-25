@@ -24,7 +24,8 @@ class Haml(Extension):
     )
 
     def on_load(self):
-        self.config['reload'] = self.config['reload'] or self.templater.debug
+        self.config['reload'] = (
+            self.config['reload'] or self.templater.cache.changes)
         self.get_template = (
             self._reloader_get if self.config['reload'] else self._cached_get)
         self.env.mtimes = {}
