@@ -48,8 +48,8 @@ class Haml(Extension):
         haml = self.compiler.process_lines(source.splitlines())
         self._store_compiled(file_path, haml)
         self.env.mtimes[file_path] = os.stat(file_path).st_mtime
-        self.env.builts[file_path] = f'{file_name}.html'
-        return self.env.builts[file_path]
+        self.env.builds[file_path] = f'{file_name}.html'
+        return self.env.builds[file_path]
 
     def _is_cache_valid(self, file_path):
         try:
@@ -67,7 +67,7 @@ class Haml(Extension):
         return None
 
     def _cached_get(self, file_path):
-        return self.env.builts.get(file_path)
+        return self.env.builds.get(file_path)
 
     def load(self, path, file_name):
         file_path = os.path.join(path, file_name)
