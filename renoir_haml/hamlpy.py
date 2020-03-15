@@ -5,8 +5,8 @@
 
     Adapted from the original code (https://github.com/jessemiller/HamlPy)
 
-    :copyright: (c) 2011 Jesse Miller
-    :license: BSD, see LICENSE for more details.
+    :copyright: 2011 Jesse Miller
+    :license: BSD-3-Clause
 """
 
 from .nodes import RootNode, HamlNode, create_node

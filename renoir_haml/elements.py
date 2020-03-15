@@ -5,12 +5,12 @@
 
     Processes haml/html elements
 
-    :copyright: (c) 2017-2019 by Giovanni Barillari
+    :copyright: 2017 Giovanni Barillari
 
     Based on the code of hamlpy (https://github.com/jessemiller/HamlPy)
-    :copyright: (c) 2011 Jesse Miller
+    :copyright: 2011 Jesse Miller
 
-    :license: BSD, see LICENSE for more details.
+    :license: BSD-3-Clause
 """
 
 import re

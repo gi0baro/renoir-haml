@@ -3,6 +3,8 @@ __pycache__
 
 *.sublime-*
 .venv
+.vscode
+poetry.lock
 
 build/*
 dist/*

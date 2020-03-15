@@ -1,12 +1,12 @@
-# Renoir-Haml
+# Renoir-HAML
 
-Renoir-Haml is an extension for the [Renoir engine](http://github.com/emmett-framework/renoir) providing an Haml like syntax for templates. This is not a template engine but a compiler which converts haml files to html renoir templates.
+Renoir-HAML is an extension for the [Renoir engine](https://github.com/emmett-framework/renoir) providing an HAML like syntax for templates. This is not a template engine but a compiler which converts HAML files to HTML Renoir templates.
 
-[![pip version](https://img.shields.io/pypi/v/renoir-haml.svg?style=flat)](https://pypi.python.org/pypi/Renoir-Haml) 
+[![pip version](https://img.shields.io/pypi/v/renoir-haml.svg?style=flat)](https://pypi.python.org/pypi/Renoir-HAML) 
 
 ## Installation
 
-You can install Renoir-Haml using pip:
+You can install Renoir-HAML using pip:
 
     pip install renoir-haml
 
@@ -27,4 +27,4 @@ renoir.use_extension(Haml)
 
 ## License
 
-Renoir-Haml is released under BSD license. Check the LICENSE file for more details.
+Renoir-HAML is released under BSD license. Check the LICENSE file for more details.

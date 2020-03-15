@@ -5,8 +5,8 @@
 
     Provides the Haml extension for Renoir
 
-    :copyright: (c) 2017-2019 by Giovanni Barillari
-    :license: BSD, see LICENSE for more details.
+    :copyright: 2017 Giovanni Barillari
+    :license: BSD-3-Clause
 """
 
 import os
@@ -25,9 +25,11 @@ class Haml(Extension):
 
     def on_load(self):
         self.config['reload'] = (
-            self.config['reload'] or self.templater.cache.changes)
+            self.config['reload'] or self.templater.cache.changes
+        )
         self.get_template = (
-            self._reloader_get if self.config['reload'] else self._cached_get)
+            self._reloader_get if self.config['reload'] else self._cached_get
+        )
         self.env.mtimes = {}
         self.env.builds = {}
         self.compiler = Compiler()
